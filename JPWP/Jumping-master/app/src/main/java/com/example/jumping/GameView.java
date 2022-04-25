@@ -102,7 +102,7 @@ public class GameView extends View {
                 astroY = 786- astro[0].getHeight();
             }
         if(astroY == 786- astro[0].getHeight()){
-                counter = 0;
+                
                 firstTouch = true;
             }
         score = score + 0.35;
@@ -154,9 +154,9 @@ public class GameView extends View {
     public boolean onTouchEvent(MotionEvent event) {
         int action = event.getAction();
 
-        if(action == MotionEvent.ACTION_DOWN && counter<2){
+        if(action == MotionEvent.ACTION_DOWN && ){
             speed = -70;
-            counter += 1;
+            ;
         }
 
         return true;
@@ -172,4 +172,3 @@ public class GameView extends View {
     }
 
 }
-//testGIT
